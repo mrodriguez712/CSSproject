@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Guestbook page - Marte Rodriguez</title>
+	<meta name="author" content="Marte Rodriguez">
+	<meta name="keywords" content="Guestbook">
+	<meta name="description" content="signup for my guestbook">
+	<meta http-equiv="refresh" content="600">
+	<meta name="robots" content="follow">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/myStyle.css">
+</head>
+<body>
+<!--Nav-->
+	<nav>
+	<div id="myNavBar" class="nav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../html/home.html">Home</a>
+		<a href="../html/resume.html">Resume</a>
+		<a href="../html/interests.html">Interests</a>
+		<a href="../html/reflections.html">Reflections</a>
+		<a href="../html/guestbook.html" style="color:white;" class="active">Guestbook</a>
+	</div>
+	</nav>
+	<div id="SideButton">
+		<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+		<br><br>
+		<br><br>
+	<h3><u>My Guestbook</u></h3>
+<!--Guestbook-->
+	<img src="../images/guestbook5.jpg" class="gimage" alt="Bruce Willis Hollywood star">
+	<div class="guestbook">
+	<h1 style="color:red; font-size:85px; filter: drop-shadow(2px 2px 2px black); margin-left:10%;">
+	Guestbook</h1>
+	<form
+		method="post"
+		action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+		
+	Enter Your Name: <input type="text" name="Name" size="40"/>
+	<br/>
+	<br/>
+	Enter your E-mail: <input type="text" name="Email" size="40"/>
+	<br/>
+	<br/><br/>
+	
+	What country do you live in?
+						<input style="margin-right: 17.5%;" type="text" name="country" size="40">
+	<br/>
+	<br/><br/>
+	
+	What is your experience in Web Developer?<br/>
+	<input type="radio" id="None" name="Experience" value="None">
+	<label for="None">None</label>
+	<br>
+	<input type="radio" id="Beginner" name="Experience" value="Beginner">
+	<label for="Beginner">Beginner</label>
+	<br>
+	<input type="radio" id="Immediate" name="Experience" value="Immediate">
+	<label for="Immediate">Immediate</label>
+	<br>
+	<input type="radio" id="Advanced" name="Experience" value="Advanced">
+	<label for="Advanced">Advanced</label>
+	<br>
+	<br>
+	
+	Should we add you to our mailing list?
+	<input type="checkbox">
+	<br/>
+	<br/><br/>
+	
+	What web technologies are you interested in? (check all that apply):<br/>
+	<select name="interests" multiple="multiple" size="6">
+	<option>HTML</option>
+	<option>CSS</option>
+	<option>JavaScript</option>
+	<option>AJAX</option>
+	<option>SQL</option>
+	<option>PHP</option>
+	</select>
+	<br/>
+	<br/>
+	
+	How did you find my website?
+	<br/>
+	<select name="website">
+	<option>Select one</option>
+	<option>I'm a friend</option>
+	<option>A friend directed me to your site</option>
+	<option>School Web Site</option>
+	<option>A search engine directed me to your site</option>
+	<option>I came across your site by accident</option>
+	<option>Other</option>
+	</select>
+	<br/>
+	<br/>
+	
+	Comments:<br/>
+	<textarea cols="50" rows="8" placeholder="Enter your message here..."></textarea>
+	<br/>
+	<br/>
+	
+	<input style="font-size:20px;" type="submit" value="Submit"/>
+	<input style="font-size:20px;" type="reset"/>
+	</form>
+	</div>
+	
+<!--footer-->
+	<div class="footer">
+		<a href="../html/home.html">Home</a>
+		<a href="../html/resume.html">Resume</a>
+		<a href="../html/interests.html">Interests</a>
+		<a href="../html/reflections.html">Reflections</a>
+		<a href="../html/guestbook.html">Guestbook</a>
+	</div>
+	</div>
+	<script>
+	function openNav() {
+		document.getElementById("myNavBar").style.width = "250px";
+		document.getElementById("SideButton").style.marginLeft = "250px";
+		}
+	function closeNav() {
+		document.getElementById("myNavBar").style.width = "0";
+		document.getElementById("SideButton").style.marginLeft = "0";
+		}
+	</script>
+</body>
+</html>

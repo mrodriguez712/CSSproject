@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wannie Music</title>       
+	<meta name="author" content="Marte Rodriguez" />       
+	<meta name="keywords" content="final project Music Store, based on wireframe" />       
+	<meta name="description" content="PCSuperstore Template, music store designed by me" />       
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />       
+	<meta name="robots" content="none" />   
+		<link rel="stylesheet" href="Style.css" type="text/css" />
+		<script src="library.js"></script>   
+		<script src="cookies.js"></script>
+</head>
+<body>
+<table name="main" cellpadding="5" width="100%" border="0">
+	<tr>
+		<td width="100"></td>
+		<td></td>
+		<td ></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			
+		</td>
+		<td valign="bottom" class="header">W<small>annie</small>M<small>usic</small></td>
+		<td width="1px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+			<a href="home.html" class="orderSum2" style="font-size:22px;">Home</a><br /><br>
+			<a href="contact.html" class="orderSum2" style="font-size:22px;">Contact Us</a><br /><br>
+			<a href="order.html" class="orderSum2" style="font-size:22px;">Services</a>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td valign="top" class="menu" width="1000">
+			<form>
+			<table class="menu" border="0" width="100%">
+				<tr>
+					<td valign="top">Select Service:</td>
+					<td>
+						<input type="radio" name="rdoService" value="1" checked="checked" onclick="return orderSummary()" /> Vocal Session<br />
+						<input type="radio" name="rdoService" value="2" onclick="return orderSummary()" /> Toplining<br />
+						<input type="radio" name="rdoService" value="3" onclick="return orderSummary()" /> Custom Songwriting<br />
+						<input type="radio" name="rdoService" value="4" onclick="return orderSummary()" /> Music Production<br />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr style="background-color:white" />
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">Time Due:</td>
+					<td valign="top" nowrap="nowrap">
+						<input type="radio" name="rdoTimeDue" value="ht" checked="checked" onclick="return orderSummary()" /> 5+ days<br />
+						<input type="radio" name="rdoTimeDue" value="dd"  onclick="return orderSummary()" /> 3-4 days<br />
+						<input type="radio" name="rdoTimeDue" value="dd"  onclick="return orderSummary()" /> 24-48 hours
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<hr style="background-color:white" />
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" name="ownTrack">Build your own Track:<br><br><br><br><br>Or Choose your own Production:</td>
+					<td valign="top" nowrap="nowrap">
+					<input type="radio" name="rdoOption" value="p0" onclick="changeOption()"><br><br>
+						<input type="checkbox" name="chkOption" value="Vocal" onclick="return orderSummary()" id="options" disabled />Vocal
+						<input type="checkbox" name="chkOption" value="Guitar" onclick="return orderSummary()" id="options" disabled />Guitar
+						<input type="checkbox" name="chkOption" value="Keys" onclick="return orderSummary()" id="options" disabled />Keys<br>
+						<input type="checkbox" name="chkOption" value="Drums and Percussion" onclick="return orderSummary()" id="options" disabled />Drums and Percussion
+						<input type="checkbox" name="chkOption" value="Bass" onclick="return orderSummary()" id="options" disabled />Bass<br><br>
+					<input type="radio" name="rdoOption" value="p1" onclick="hideOption()">
+					Vocal Production<br>
+					<input type="radio" name="rdoOption" value="p2" onclick="hideOption()">
+					Acoustic Demo<br>
+					<input type="radio" name="rdoOption" value="p3" onclick="hideOption()">
+					Full Production
+					</td>
+				</tr>
+			</table>
+			</form>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td class="orderSum" valign="top">
+			<div id="orderSum" style="height: 175px"><strong>Order Summary: </strong><br /><br>
+			<br /></div>
+			<br /><br /><br />
+			<div id="priceSum">
+				<table width="100%"> 
+					<tr>
+						<td><strong>Subtotal:</strong></td> 
+						<td align='right'></td>
+					</tr>
+					<tr>
+						<td><strong>Tax:</strong></td> 
+						<td align="right" style="border-bottom-color: White; border-bottom-width: 1px; border-bottom-style: solid;"></td>
+					</tr>
+					<tr> 
+						<td><strong>Total:</strong></td> 
+						<td align='right'></td>
+					</tr>
+				</table>	
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" class="menu" width="1000">
+			<center><input type="button" onclick="return writePCCookies()" value="Submit Your Order"></center>
+		</td>
+	</tr>
+</table>
+	<script type="text/javascript"><!--//<![CDATA[document.forms[0].reset();orderSummary();//]]>//--></script>
+	
+</body>
+</html>

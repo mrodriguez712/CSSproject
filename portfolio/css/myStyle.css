@@ -1,0 +1,227 @@
+/* STYLE SHEET FOR (personal web site) */
+
+body{
+	background: linear-gradient(to right, black, black, black, red, black, black, red, black, black, black);
+}
+
+h1{
+	text-align: center;
+	color: #545351;
+	filter: drop-shadow(2px 2px 2px white);
+	font-size: 40px;
+}
+
+h3{
+	position: absolute;
+	color: darkred;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-size: 70px;
+	position: fixed;
+	filter: drop-shadow(2px 1px 2px grey);
+	z-index: 1;
+}
+
+.firstImage{
+	float: left;
+	border: 3px solid white;
+	border-style: dotted;
+	border-radius:60px 60px 60px 60px;
+	height: auto;
+	width: 40%;
+	padding: 5px;
+	margin: 5px;
+	box-shadow: 1px 1px 3px black;
+	transform: rotate (-5deg);
+	box-shadow: 1px 1px 3px black;
+	transform: rotate (-5deg);
+	box-shadow: 1px 1px 3px black;
+	transform: rotate(-5deg);
+	transform: rotate(-5deg);
+	filter: grayscale(100%);
+}
+
+.secondImage{
+	float: right;
+	border: 3px solid white;
+	border-style: dotted;
+	border-radius:60px 60px 60px 60px;
+	height: auto;
+	width: 40%;
+	padding: 5px;
+	margin: 5px;
+	box-shadow: 1px 1px 3px black;
+	transform: rotate (5deg);
+	box-shadow: 1px 1px 3px black;
+	transform: rotate (5deg);
+	box-shadow: 1px 1px 3px black;
+	transform: rotate(5deg);
+	transform: rotate(5deg);
+	filter: grayscale(100%);
+	margin-right: 40px;
+}
+
+.hpage{
+	border: solid 4px black;
+	background: linear-gradient(to bottom right, lightgrey, white,  white, lightgrey, white, white, 
+	lightgrey, white, white, lightgrey);
+	margin: auto;
+	height: auto;
+	max-width: 400px;
+	padding: 70px;
+	font-size: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.resume{ 
+	border: solid 4px black;
+	background-color: white;
+	width: 60%;
+	font-size: 20px;
+	margin: auto;
+	padding: 10px;
+}
+
+.resumeimage{
+	border: solid 4px black;
+	padding: 3px 3px 3px 3px;
+	background-color: white;
+	z-index: 1;
+	transform: rotate(5deg);
+	height: auto;
+	width: 30%;
+	float: right;
+}
+
+.rpage{
+	height: 50%;
+	width: 1900px;
+	filter: grayscale(100%);
+	transform: scaleX(-1);
+}
+
+.rparagraph{
+	color: white;
+	position: absolute;
+	top: 20px;
+	left: 920px;
+	text-align: center;
+	font-size: 23px;
+	filter: drop-shadow(5px 5px 5px black);
+	box-sizing: border-box;
+	width: 500px;
+	z-index: 2;
+}
+
+.container{
+	position: relative;
+	text-align: center;
+}
+
+.guestbook{
+	border: solid 4px black;
+	background-color: white;
+	width: 60%;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+}
+
+.gimage{
+	height: auto;
+	width: 20%;
+	transform: rotate(20deg);
+	float: right;
+	margin-right: 200px;
+}
+.Ipage{
+	border: solid 4px black;
+	background-color: white;
+	width: 60%;
+	height: 1400px;
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+}
+
+.active{
+	background-color: brown;
+}
+
+.nav1{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5;
+	z-index: 3;
+}
+
+.nav1 a{
+	padding: 8px 8px 18px 32px;
+	text-decoration: none;
+	font-size: 30px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	font-family: "Arial", sans-seriff;
+}
+
+.nav1 a:hover{
+	color: #f1f1f1;
+}
+
+.nav1 .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.openbtn{
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #111;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	background: linear-gradient(to right, black, black, red);
+	float: left;
+	position: fixed;
+	z-index: 25;
+}
+
+.openbtn:hover{
+	background-color: #444;
+}
+ table, th, td{
+	 border: 1px solid black;
+ }
+ 
+.footer {
+	font-size: 20px;
+	color: white;	
+	text-align: center;
+}
+
+a{
+	color: darkGrey;
+}
+ .listed{
+	 border: solid 2px black;
+	 background-color: black;
+	 color: red;
+	 padding: 5px;
+	 width: 700px;
+	 margin-left: auto;
+	 margin-right: auto;
+ }

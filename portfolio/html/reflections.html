@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reflections Page - Marte Rodriguez</title>
+	<meta name="author" content="Marte Rodriguez">
+	<meta name="keywords" content="future, first webpage">
+	<meta name="description" content="My reflection throughout the course">
+	<meta http-equiv="refresh" content="600">
+	<meta name="robots" content="follow">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/myStyle.css">
+</head>
+<body>
+<!--Nav-->
+	<nav>
+	<div id="myNavBar" class="nav1">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../html/home.html">Home</a>
+		<a href="../html/resume.html">Resume</a>
+		<a href="../html/interests.html">Interests</a>
+		<a href="../html/reflections.html" style="color:white;" class="active">Reflections</a>
+		<a href="../html/guestbook.html">Guestbook</a>
+	</div>
+	</nav>
+	<div id="SideButton">
+		<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+		<br><br>
+		<br><br>
+<!--Reflections Page-->
+	<h3><u>My Reflections</u></h3>
+	<div class="container">
+	<img src="../images/reflections.jpg" class="rpage" alt="hanging on to the future">
+	<p class="rparagraph">
+	I'm so excited and happy to share my very first web page! <br>It took me a while to finish the design and I feel like there
+	are more things I could do. However, I think it is good enough for now, but I am planning to keep coming 
+	back to it to add new things from what I will learn in the near future. <br>Ever since I started to learn 
+	coding this fall, I have been researching and playing coding games on my phone because I'm so addicted
+	to it. I enjoyed it so much that I cannot wait to learn more than what I know now. It has been great 
+	taking prerequisite subjects last spring and summer, but as soon as fall classes started, I became more
+	enthusiastic in finishing the lab assignments that I want to do more for of it. That's how much I enjoyed
+	creating this website and taking the class! <br>I will keep holding on to the future and succeed in capturing
+	my goal.</p>
+	</div>
+<!--footer-->
+	<div class="footer">
+		<a href="../html/home.html">Home</a>
+		<a href="../html/resume.html">Resume</a>
+		<a href="../html/interests.html">Interests</a>
+		<a href="../html/reflections.html">Reflections</a>
+		<a href="../html/guestbook.html">Guestbook</a>
+	</div>
+	</div>
+	
+	<script>
+	function openNav() {
+		document.getElementById("myNavBar").style.width = "250px";
+		document.getElementById("SideButton").style.marginLeft = "250px";
+		}
+	function closeNav() {
+		document.getElementById("myNavBar").style.width = "0";
+		document.getElementById("SideButton").style.marginLeft = "0";
+		}
+	</script>
+	
+</body>
+</html>

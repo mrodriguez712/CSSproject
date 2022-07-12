@@ -1,0 +1,48 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-color: #ffe5cc;
+}
+
+.menu {
+	background-color: beige;
+	color: black;
+	border-style: groove;
+}
+
+.header {
+	background-color: #fff8f0;
+	border-radius: 150px 120px;
+	color: tan;
+	text-shadow: 0px 0px 2px black;
+	border: solid white 5px;
+	box-shadow: 0px 0px 2px 4px lightgrey;
+	text-align: center;
+	font-size: xxx-large;
+}
+
+small {
+	text-decoration: underline;
+}
+
+.contact {
+	font-size:xx-small;
+	color: White;
+	text-shadow: 2px 2px 2px #000;
+	text-align: right;
+}
+
+.orderSum {
+	border: white solid 1px;
+	box-shadow: 0px 0px 1px 2px lightgrey;
+	width: 250px;
+}
+
+.orderSum2 {
+	color: tan;
+	text-decoration: none;
+	text-shadow: 2px 2px 1px grey;
+	}
+
+.options {
+	visibility: hidden;
+}

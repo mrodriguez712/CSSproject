@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wannie Music</title>       
+	<meta name="author" content="Marte Rodriguez" />       
+	<meta name="keywords" content="final project Music Store, based on wireframe" />       
+	<meta name="description" content="PCStore template, music store designed by me." />       
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />       
+	<meta name="robots" content="none" />   
+		<link rel="stylesheet" href="Style.css" type="text/css" />  
+		<script type="text/javascript" src="library.js"></script>   
+		<script type="text/javascript" src="cookies.js"></script>
+		<script type="text/javascript">
+		<!--
+		//<![CDATA[        
+		// content of your Javascript goes here//]]>
+		//-->
+		</script> 
+		<script type="text/javascript"></script>
+</head>
+<body style="color:white"  onLoad="secondPassed()">
+<form action="summary.html" onsubmit="return orderSummary()">
+<table name="main" cellpadding="5" width="100%" border="0">
+	<tr>
+		<td colspan="2">
+			<td valign="bottom" class="header">W<small>annie</small>M<small>usic</small></td>
+		<td width="1px">&nbsp;</td>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="1" valign="top">
+			<a href="home.html" class="orderSum2" style="font-size:22px;">Home</a><br /><br>
+			<a href="contact.html" class="orderSum2" style="font-size:22px;">Contact Us</a><br /><br>
+			<a href="order.html" class="orderSum2" style="font-size:22px;">Services</a>
+		</td>
+		<td style="background-color:white" rowspan="3">&nbsp;</td>
+		<td valign="top" class="menu">
+		<h2>Thank you for your order</h2>
+			<div style="padding-left:50px">
+				<p>Once the timer expires, the page will redirect you back to the order page.</p>
+				<p id="countdown" class="timer" style="text-align:center;"></p>
+				
+				<p><strong>Your Music will be delivered to:<strong></p>
+				<script type="text/javascript">
+				document.write(GetCookie("custEmail") + "<br />");
+				var custEmail = custEmail.bold();
+				</script>
+				
+				<hr>
+				<script type="text/javascript">
+				document.write(GetCookie("MusicService"));
+				</script>
+				
+				<hr>
+				<p align="right">
+				<script type="text/javascript"><!--
+				document.write(GetCookie("PriceSum"));	
+				</script>
+				</p>
+			</div>
+		</td>
+		<td rowspan="1" width="1" style="background-color: White;"></td>
+	</tr>
+</table>
+
+</body>
+</html>

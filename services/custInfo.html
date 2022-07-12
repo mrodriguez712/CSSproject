@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wannie Music</title>       
+	<meta name="author" content="Marte Rodriguez" />       
+	<meta name="keywords" content="final project Music Store, based on wireframe" />       
+	<meta name="description" content="PCStore template, music store designed by me." />       
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />       
+	<meta name="robots" content="none" />   
+		<link rel="stylesheet" href="Style.css" type="text/css" />
+			<script type="text/javascript" src="cookies.js"></script>
+			<script type="text/javascript" src="library.js"></script>
+</head>
+<body>
+<table name="main" cellpadding="5" width="100%" border="0">
+	<tr>
+		<td width="100"></td>
+		<td></td>
+		<td width="1"></td>
+		<td></td>
+		<td width="1"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<td valign="bottom" class="header">W<small>annie</small>M<small>usic</small></td>
+		<td width="1px">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td rowspan="2" valign="top" nowrap="nowrap" class="orderSum">
+			<a href="home.html" class="orderSum2" style="font-size:22px;">Home</a><br /><br>
+			<a href="contact.html" class="orderSum2" style="font-size:22px;">Contact Us</a><br /><br>
+			<a href="order.html" class="orderSum2" style="font-size:22px;">Services</a>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td valign="top" class="menu" width="1000">
+<table class="menu" border="0" width="100%">
+	<tr>
+		<td style="padding-left:35px;">
+			<strong>Your Current</strong>
+			<script type="text/javascript">
+			document.write(GetCookie("MusicService"));
+			</script>
+			</td>
+			<td style="padding-right:35px;">
+			<br /><br />
+			<script type="text/javascript">
+			document.write(GetCookie("PriceSum"));
+			</script>
+		</td>
+	</tr>
+</table>
+		</td>
+		<td rowspan="2" width="1" style="background-color: White;"></td>
+		<td id="orderSum"  class="orderSum" valign="top">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menu" valign="top">
+			Delivery Information <span style="font-size:x-small">(* required information)</span>
+			<form action="summary.html" method="get"  id="customerForm" onsubmit="return chForm();">
+			<table width="100%">
+				<tr>
+					<td width="400px">First Name: *</td>
+					<td><input type="text" name="txtFName" onchange="return clearThis()" /></td>
+					<td id="txtFName" style="color:white;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Last Name: *</td>
+					<td><input type="text" name="txtLName"  onchange="return clearThis()" /></td>
+					<td id="txtLName" style="color:white;font-weight:bold"></td>
+				</tr>
+				<tr>
+					<td>Email: *</td>
+					<td><input type="text" name="txtEmail" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtEmail" style="color:white;font-weight:bold; font-size: smaller"></td>
+				</tr>
+				<tr>
+					<td>Address: *</td>
+					<td><input type="text" name="txtAddress" onchange="return clearThis()"/></td>
+					<td id="txtAddress" style="color:white;font-weight:bold; font-size:smaller"></td>
+				</tr>
+				<tr>
+					<td>Apartment Number: (if applicable)</td>
+					<td><input type="text" name="txtApartment"/></td>
+					<td id="txtApartment" style="color:white;font-weight:bold; font-size:smaller"><td>
+				</tr>
+				<tr>
+					<td>City, State Zip: *</td>
+					<td>
+						<input type="text" name="txtCity"/>
+						<input type="text" name="txtState" size="1" style="margin-left:1px;"/>
+						<input type="text" name="txtZip" size="5" style="margin-left:1px;"/>
+					</td>
+					<td id="txtCity" style="color:white;font-weight:bold; font-size:smaller"></td>
+					<td id="txtState" style="color:white;font-weight:bold; font-size:smaller"></td>
+					<td id="txtZip" style="color:white;font-weight:bold; font-size:smaller"></td>
+				</tr>
+				<tr>
+					<td>Phone:*(XXX-XXX-XXXX)</td>
+					<td>
+						<input type="text" name="txtPhone"/>
+					</td>
+					<td id="txtPhone" style="color:white;font-weight:bold; font-size:smaller"></td>
+				</tr>
+					<td colspan="10" align="center"><br /><br /><input type="submit" name="cmdSubmit" value="Book Now" /></td>	
+				</tr>
+			</table>
+			</form>
+		</td>
+		<td valign="top" id="priceSum" class="orderSum">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+</html>
